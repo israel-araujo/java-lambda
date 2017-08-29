@@ -44,7 +44,19 @@ public class Programa {
 		//	System.out.println("Parabens pelo aniversario  no." + j);
 		//	j++;
 
-		}
+	//	}
+	
+		int i = 150;
+		while (i < 300) {
+		System.out.println(i);
+		i++;
+
+	}
+	
+	
+	for(int i1=150;i1 <= 300; i1 ++){
+		System.out.println("todos os numeros de " + "   " + i1);
+	}
 		
 	//	int multiplicador = 3;
 		
@@ -52,10 +64,34 @@ public class Programa {
 			//if(i % 2 == 1){
 				//System.out.println(i * multiplicador);
 			//}
-		}
+	
+	for(int i2=1;i2 <= 1000; i2 ++){
+		System.out.println( i2);
+	}
+	
+	int j = 1;
+	while(j <= 1000){
+		if(j % 2 == 0){
+		System.out.println("this is only" +"      " + j  + "   "+ "number while loop");
+		j++;
+	}
+	}
+		
+	
+
+		} 
+	
+	
+}
+
+
 
 	//}
 //}
+
+
+
+
 
 
 
