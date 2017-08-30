@@ -12,15 +12,21 @@ import modelo.cliente;
 
 public class Conta {
 
-	int numero;
+	private int numero;
 	private double saldo;
 	private double limite;
 	cliente titular;
+	private static int numeroIncremental = 1;
 	
 	
 	public Conta(int numero,double limite){
 		this.numero = numero;
 		this.limite = limite;
+	}
+	
+	public Conta(){
+		this.numero = numeroIncremental;
+		numeroIncremental++;
 	}
 
 	public void saca(double valor) {
@@ -43,5 +49,13 @@ public class Conta {
 	
 	public void setLimite(double novoLimite){
 		 this.limite = novoLimite;
+	}
+	
+	public int getNumero(){
+		return this.numero;
+	}
+	
+	public int getNumeroIncremental(){
+		return this.numeroIncremental;
 	}
 }
